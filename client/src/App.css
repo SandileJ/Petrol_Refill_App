@@ -1,38 +1,113 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
+/* Styles for the logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Styles for header */
+.App-header {
+  background-color: #282c34; /* Dark background */
+  min-height: 100vh; /* Full height */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Vertical layout */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* Text color */
+}
+
+/* Styles for links */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+}
+
+/* Button styles */
+button {
+  background-color: #61dafb; /* Light blue button */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  margin-top: 20px; /* Spacing above the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #52a6d9; /* Darker blue on hover */
+}
+
+/* Form styles */
+input {
+  padding: 10px; /* Padding inside input */
+  margin: 10px; /* Spacing around input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  width: 200px; /* Fixed width for inputs */
+}
+
+/* Media query for animations */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Animation */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/* Keyframes for spinning animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Apply a gradient background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+  background: linear-gradient(to right, #4a90e2, #e94e77); /* Gradient from blue to pink */
+  color: white; /* Default text color */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Additional styles for header */
+.App-header {
+  background-color: rgba(40, 44, 52, 0.8); /* Semi-transparent header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation styles */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
   }
 }
